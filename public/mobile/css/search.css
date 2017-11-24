@@ -1,0 +1,49 @@
+body {
+  background: white;
+}
+.lt_view {
+  padding: 10px 10px;
+}
+.lt_search {
+  border: 1px solid orange;
+  border-radius: 3px;
+  width: 100%;
+  height: 30px;
+}
+.lt_search .lt_search_inp {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: none;
+  width: 80%;
+  float: left;
+  font-size: 14px;
+  height: 100%;
+  text-indent: 1em;
+}
+.lt_search .lt_searchBtn {
+  width: 20%;
+  float: left;
+  height: 28px;
+  background: orange;
+  color: white;
+  display: block;
+  line-height: 30px;
+  text-align: center;
+}
+.lt_history {
+  font-size: 14px;
+  padding: 10px 0;
+  color: #888;
+}
+.lt_his_list {
+  border: 1px solid orangered;
+  border-bottom: none;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 10px;
+}
+.lt_his_list:last-child {
+  border-bottom: 1px solid orangered;
+}
+/*# sourceMappingURL=./search.css.map */

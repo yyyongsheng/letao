@@ -1,0 +1,108 @@
+.lt_view {
+  background: white;
+  position: relative;
+  height: 100%;
+}
+.lt_nav {
+  padding: 5px 10px;
+}
+.lt_nav a {
+  display: block;
+  width: 33.33%;
+  float: left;
+}
+.lt_nav a img {
+  display: block;
+  width: 100%;
+}
+.lt_sale {
+  padding: 10px 10px 0 10px;
+  width: 100%;
+}
+.lt_sale .lt_sale_left {
+  width: 66.66666%;
+}
+.lt_sale .lt_sale_left a {
+  display: block;
+  float: left;
+  width: 50%;
+}
+.lt_sale .lt_sale_left a img {
+  display: block;
+  width: 100%;
+}
+.lt_sale .lt_sale_right {
+  width: 33.3333%;
+}
+.lt_sale .lt_sale_right a {
+  width: 100%;
+  display: block;
+}
+.lt_sale .lt_sale_right img {
+  display: block;
+  width: 98%;
+}
+.lt_pingpai {
+  padding: 0 10px;
+}
+.lt_pingpai > img {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.lt_pingpai div a {
+  width: 25%;
+  float: left;
+  display: block;
+}
+.lt_pingpai div a img {
+  width: 100%;
+  display: block;
+}
+.lt_sport {
+  padding: 0 10px;
+}
+.lt_sport .lt_sport_title img {
+  width: 100%;
+  display: block;
+}
+.lt_sport .lt_sport_show {
+  box-shadow: 3px 3px 8px #ccc;
+  padding-bottom: 8px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 49%;
+  float: left;
+}
+.lt_sport .lt_sport_show img {
+  width: 100%;
+}
+.lt_sport .lt_sport_show p {
+  padding: 0 10px;
+  overflow: hidden;
+  height: 40px;
+  text-align: left;
+}
+.lt_sport .lt_sport_show span {
+  color: red;
+}
+.lt_sport .lt_sport_show del {
+  color: #888;
+}
+.lt_sport .lt_sport_show a {
+  display: block;
+  background: orange;
+  width: 70px;
+  height: 25px;
+  margin: 0 auto;
+  line-height: 25px;
+  color: white;
+  border-radius: 3px;
+}
+.lt_sport .lt_sport_show:nth-of-type(2n+1) {
+  margin-right: 0;
+}
+/*# sourceMappingURL=./index.css.map */

@@ -1,0 +1,20 @@
+header {
+  padding: 5px 30px;
+}
+header .lt_header_pl {
+  position: absolute;
+  color: inherit;
+  left: 8px;
+  top: 12px;
+}
+header .searchTxt {
+  width: 100%;
+  height: 100%;
+}
+header .lt_header_pr {
+  color: inherit;
+  position: absolute;
+  right: 8px;
+  top: 12px;
+}
+/*# sourceMappingURL=./category.css.map */

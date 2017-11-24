@@ -1,0 +1,111 @@
+body {
+  background: white;
+}
+.mui-scroll-wrapper {
+  background: white;
+}
+.lt_view {
+  position: relative;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  padding: 10px 0;
+  height: 100%;
+}
+.lt_nav {
+  margin-bottom: 5px;
+  padding: 10px 0;
+}
+.lt_search {
+  margin: 0 auto;
+  border: 1px solid orange;
+  border-radius: 3px;
+  width: 95%;
+  height: 32px;
+}
+.lt_search .lt_search_inp {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: none;
+  width: 80%;
+  float: left;
+  font-size: 14px;
+  height: 100%;
+  text-indent: 1em;
+}
+.lt_search .lt_searchBtn {
+  width: 20%;
+  float: left;
+  height: 30px;
+  background: orange;
+  color: white;
+  display: block;
+  line-height: 30px;
+  text-align: center;
+}
+.lt_item {
+  margin-bottom: 10px;
+  background: pink;
+}
+.lt_item ul {
+  padding: 7px;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+}
+.lt_item ul li {
+  font-size: 12px;
+  float: left;
+  width: 25%;
+}
+.lt_item ul li a {
+  display: block;
+  color: #555;
+}
+.lt_item ul li a span {
+  font-size: 12px;
+}
+.lt_concent {
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+.lt_concent .lt_sport_show {
+  box-shadow: 3px 3px 8px #ccc;
+  padding-bottom: 8px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 49%;
+  float: left;
+}
+.lt_concent .lt_sport_show img {
+  width: 100%;
+}
+.lt_concent .lt_sport_show p {
+  padding: 0 10px;
+  overflow: hidden;
+  height: 40px;
+  text-align: left;
+}
+.lt_concent .lt_sport_show span {
+  color: red;
+}
+.lt_concent .lt_sport_show del {
+  color: #888;
+}
+.lt_concent .lt_sport_show a {
+  display: block;
+  background: orange;
+  width: 70px;
+  height: 25px;
+  margin: 0 auto;
+  line-height: 25px;
+  color: white;
+  border-radius: 3px;
+}
+.lt_concent .lt_sport_show:nth-of-type(2n) {
+  margin-right: 0;
+}
+/*# sourceMappingURL=./searchList.css.map */
