@@ -31,6 +31,7 @@ var Count=1;
 
 
 mui.init({
+   
   pullRefresh : {
     container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
     down : {
@@ -40,7 +41,10 @@ mui.init({
       contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
       contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
       callback :function(){
+        maskShow();
+
         setTimeout(function () {
+         
           queryObj.page=1;
           queryProduct(function (result) {
             Count=result.count;
@@ -52,6 +56,10 @@ mui.init({
           })
          
         },1000);
+
+        setTimeout(function() {
+          maskClose()
+         }, 1000);
       } 
     },
     up : {
@@ -94,11 +102,14 @@ mui.init({
 
 //发送请求
 function queryProduct(callback) {
+ 
   $.ajax({
     url:"/product/queryProduct",
     data:queryObj,
     success:function (result) {
+     
       callback &&callback(result);
+     
     }
   })
 }

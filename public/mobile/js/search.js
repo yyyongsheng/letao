@@ -16,9 +16,11 @@ $(function () {
 
     var strArr=[];
     for(var i=0;i<arr.length;i++){
-      strArr.push(' <div class="lt_his_list"><div class="mui-claerfix hl_item"> <span class="mui-pull-left item_font">'+arr[i]+'</span><span class="mui-pull-right item_close mui-icon mui-icon-closeempty"></span></div>  </div>')
+      strArr.push(' <div class="lt_his_list"><div class="mui-clearfix hl_item"> <span class="mui-pull-left item_font his_text">'+arr[i]+'</span><span class="his_del mui-pull-right item_close mui-icon mui-icon-closeempty"></span></div>  </div>')
     }
 // 渲染列表数据 
+    console.log(strArr)
+    console.log(strArr.join())
     $('.lt_list').html(strArr.join(''))
 
   }
@@ -30,12 +32,12 @@ $(function () {
       mui.toast("亲，请输入关键字哦！")
       return false;
     }
-
+    val=$.trim(val)
     var ls=localStorage;
     var arr=(ls.getItem('LT_his') && JSON.parse(ls.getItem('LT_his')))||[];
  // 要做去重的处理
     for(var j=0;j<arr.length;j++){
-      if(arr[j]==val){
+      if($.trim(arr[j])==$.trim(val)){
         // 删除旧的 添加新的到最开头
         // (要删除的值的索引,要删除几个)
         arr.splice(j,1);
@@ -69,6 +71,18 @@ $(function () {
     loadHistory()
   })
 
+
+
+
+  $('.his_text').on('tap',function () {
+    // console.log(1)
+    // console.log($(this).text())
+    var key=$.trim($(this).text());
+   
+    // console.log(key)
+    location.href="searchList.html?key="+key;
+
+  })
 
 
 

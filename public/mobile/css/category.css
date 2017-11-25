@@ -10,11 +10,71 @@ header .lt_header_pl {
 header .searchTxt {
   width: 100%;
   height: 100%;
+  color: black;
 }
 header .lt_header_pr {
   color: inherit;
   position: absolute;
   right: 8px;
   top: 12px;
+}
+.lt_view {
+  margin-top: 10px;
+  padding-left: 80px;
+  position: relative;
+}
+.lt_view .lt_sidebar {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 80px;
+}
+.lt_view .lt_sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lt_view .lt_sidebar ul li {
+  border-bottom: 1px solid orange;
+  background: white;
+  color: lightcoral;
+}
+.lt_view .lt_sidebar ul li a {
+  color: inherit;
+  padding: 10px;
+  display: block;
+}
+.lt_view .lt_sidebar .list {
+  background: orangered;
+  color: white;
+}
+.lt_view .lt_content {
+  padding: 0 10px;
+  text-align: center;
+}
+.lt_view .lt_content ul {
+  padding: 5px;
+  background: white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lt_view .lt_content ul li {
+  padding: 5px;
+  float: left;
+  width: 33.33%;
+}
+.lt_view .lt_content ul li a {
+  display: block;
+  padding: 5px;
+  background: yellow;
+}
+.lt_view .lt_content ul li a img {
+  display: block;
+  width: 100%;
+}
+.lt_view .lt_content ul li a p {
+  background: white;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=./category.css.map */

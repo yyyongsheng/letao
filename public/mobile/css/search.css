@@ -46,4 +46,16 @@ body {
 .lt_his_list:last-child {
   border-bottom: 1px solid orangered;
 }
+.his_text {
+  display: block;
+  width: 90%;
+}
+.his_del {
+  display: block;
+  line-height: 30px;
+  width: 10%;
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+}
 /*# sourceMappingURL=./search.css.map */

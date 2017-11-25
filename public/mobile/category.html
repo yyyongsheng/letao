@@ -14,14 +14,38 @@
 </head>
 
 <body>
+    <!-- mui-icon mui-icon-spinner-cycle mui-spin -->
+    <span class="lt_loading   "></span>
   <header>
-   <a href="javascript:;" class="lt_header_pl"><span class="fa fa-arrow-left"></span></a>
+   <a href="javascript:history.back();" class="lt_header_pl"><span class="fa fa-arrow-left"></span></a>
    <input type="text" class="searchTxt">
-   <a href="javascript:;" class="lt_header_pr"><span class="fa fa-search"></span></a>
+   <a href="search.html" class="lt_header_pr"><span class="fa fa-search"></span></a>
   </header>
   <!-- 搜索框 -->
   <div class="lt_view">
+   <div class="lt_sidebar">
+    <ul>
+      <!-- <li class="list"><a href="javascript:;">运功馆</a></li>
+      <li><a href="javascript:;">女士馆</a></li>
+      <li><a href="javascript:;">男士馆</a></li>
+      <li><a href="javascript:;">户外馆</a></li> -->
+    </ul>
+
+   </div>
+   <div class="lt_content">
+   <ul class="mui-clearfix">
+     <li><a href="javascript:;"><img src="./images/brand1.png" alt=""><p>耐克</p></a></li>
+     <li><a href="javascript:;"><img src="./images/brand1.png" alt=""><p>耐克</p></a></li>
+     <li><a href="javascript:;"><img src="./images/brand1.png" alt=""><p>耐克</p></a></li>
+     <li><a href="javascript:;"><img src="./images/brand1.png" alt=""><p>耐克</p></a></li>
+     <li><a href="javascript:;"><img src="./images/brand1.png" alt=""><p>耐克</p></a></li>
    
+   </ul>
+
+   </div>
+
+
+
   </div>
 
   <footer>
@@ -30,7 +54,7 @@
       <span class="mui-icon mui-icon-home"></span>
       <p>首页</p>
     </a>
-    <a href="category.html">
+    <a class="active" href="category.html">
       <span class="mui-icon mui-icon-bars"></span>
       <p>分类</p>
     </a>
@@ -52,7 +76,7 @@
 <script src="./asset/mui/js/mui.js"></script>
 <script src="./asset/zepto/zepto.min.js"></script>
 <script src="./asset/artTemplate/template.js"></script>
-
+<script src="./js/common.js"></script>
 <script src="./js/category.js"></script>
 
 </html>
