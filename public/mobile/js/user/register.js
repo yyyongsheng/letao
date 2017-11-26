@@ -1,0 +1,8 @@
+
+$('.registerBtn').on('tap',function () {
+  
+
+
+
+
+})

@@ -1,0 +1,85 @@
+header {
+  padding: 5px 30px;
+}
+header .lt_header_pl {
+  position: absolute;
+  color: inherit;
+  left: 8px;
+  top: 12px;
+}
+header span {
+  line-height: 35px;
+  font-size: 20px;
+}
+header .lt_header_pr {
+  color: inherit;
+  position: absolute;
+  right: 8px;
+  top: 12px;
+}
+footer {
+  padding-top: 7px;
+  padding-left: 60px;
+}
+footer .lt_cart {
+  width: 60px;
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  font-size: 20px;
+  left: 0;
+}
+footer .lt_tool {
+  width: 100%;
+}
+footer .lt_tool button {
+  background: #ad2811;
+  width: 45%;
+}
+footer .lt_tool button:nth-of-type(2) {
+  background: rgba(193, 211, 35, 0.603);
+}
+.lt_view {
+  position: relative;
+  height: 100%;
+  background: white;
+}
+.pro_item {
+  padding: 15px 5px ;
+  border-bottom: 1px solid #ccc;
+}
+.pro_price {
+  font-size: 14px;
+}
+.pro_price span {
+  font-size: 22px;
+  color: red;
+  font-weight: 600;
+}
+.pro_price del {
+  color: #666;
+}
+.pro_size span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid #888;
+}
+.pro_size .active {
+  background: orangered;
+  border-color: orange;
+}
+.pro_num .mui-numbox {
+  width: 90px;
+  padding-left: 28px;
+}
+.pro_num .mui-numbox button {
+  width: 30px !important;
+}
+.pro_num .mui-numbox input {
+  width: 28px !important;
+}
+/*# sourceMappingURL=./product.css.map */

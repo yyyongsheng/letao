@@ -3,7 +3,7 @@ $(function () {
   quertyTopCate();
 
   function quertyTopCate() {
-    maskShow();
+    $.maskShow();
     $.ajax({
       url:"/category/queryTopCategory",
       success:function (result) {
@@ -21,7 +21,7 @@ $(function () {
           
           querySecondCategory(rows[0].id)
           setTimeout(function() {
-            maskClose()
+            $.maskClose()
            }, 1000);
         }
        
@@ -34,7 +34,7 @@ $(function () {
   // 二级分类
 
     function querySecondCategory(id) {
-      maskShow()
+      $.maskShow()
       $.ajax({
         url:"/category/querySecondCategory?id="+id,
         success:function (result) {
@@ -43,7 +43,7 @@ $(function () {
             $('.lt_content ul').html('');
             mui.toast("亲,没有更多数据了哦!")
             setTimeout(function() {
-               maskClose()
+               $.maskClose()
             },300);
            
             
@@ -56,7 +56,7 @@ $(function () {
             }
             $('.lt_content ul').html(strArr.join(''));
            setTimeout(function() {
-            maskClose()
+            $.maskClose()
            }, 1000);
 
         }

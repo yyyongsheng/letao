@@ -1,0 +1,48 @@
+.lt_view {
+  padding: 10px 10px;
+  height: 100%;
+  background: white;
+}
+.lt_login .mui-input-group:after {
+  display: none;
+}
+.lt_login .mui-input-group:before {
+  display: none;
+}
+.lt_login .mui-input-row {
+  border-radius: 5px;
+  border: 1px solid orange;
+  margin-bottom: 10px;
+}
+.lt_login .mui-input-row:after {
+  display: none;
+}
+.lt_login .mui-input-row:before {
+  display: none;
+}
+.lt_login .mui-button-row button {
+  background: orangered;
+  display: block;
+  border-color: orange;
+  width: 100%;
+  margin-bottom: 15px;
+  height: 40px;
+}
+.lt_login .mui-button-row:after {
+  display: none;
+}
+.lt_login .mui-button-row:before {
+  display: none;
+}
+.lt_login .mui-button-row .vCode {
+  float: left;
+  width: 60%;
+  border: 1px solid orange;
+  border-radius: 5px;
+}
+.lt_login .mui-button-row .gerCodeBtn {
+  float: right;
+  width: 30%;
+  height: 100%;
+}
+/*# sourceMappingURL=./register.css.map */

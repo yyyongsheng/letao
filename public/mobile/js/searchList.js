@@ -1,13 +1,13 @@
 $(function () {
   // 获取url参数
-function getURLParams(name) {
-  var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-  var r = window.location.search.substr(1).match(reg);
-  if (r != null) {
-    return unescape(r[2]);
-  }
-  return null;
-}
+// function getURLParams(name) {
+//   var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+//   var r = window.location.search.substr(1).match(reg);
+//   if (r != null) {
+//     return unescape(r[2]);
+//   }
+//   return null;
+// }
 
 
 //全局参数查询对象
@@ -22,7 +22,7 @@ function getURLParams(name) {
     pageSize:6
   };
 
-queryObj.proName=getURLParams('key');
+queryObj.proName=$.getURLParams('key');
 
 var Count=1;
 
@@ -41,7 +41,7 @@ mui.init({
       contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
       contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
       callback :function(){
-        maskShow();
+        $.maskShow();
 
         setTimeout(function () {
          
@@ -58,7 +58,7 @@ mui.init({
         },1000);
 
         setTimeout(function() {
-          maskClose()
+          $.maskClose()
          }, 1000);
       } 
     },
